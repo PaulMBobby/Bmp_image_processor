@@ -56,9 +56,9 @@ This prevents invalid files from being loaded and avoids undefined behavior.
 
 # Project Structure
 
-```
+```text
 .
-├── main.c
+├── bmpimage.c
 ├── bmp.h
 ├── bmp_functions.c
 ├── bmp_filters.c
@@ -76,7 +76,7 @@ Implements the core image processing pipeline, including:
 - File loading
 - File saving
 - Header validation
-- Memory allocation
+- Dynamic memory allocation
 - Memory cleanup
 
 ### `bmp_filters.c`
@@ -88,7 +88,7 @@ Contains all image-processing algorithms, including:
 - RGB channel extraction
 - BMP row padding (stride) calculations
 
-### `main.c`
+### `bmpimage.c`
 
 Implements the interactive command-line interface and coordinates the complete image-processing workflow.
 
@@ -108,21 +108,21 @@ Implements the interactive command-line interface and coordinates the complete i
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/PaulMBobby/Bmp_image_processor.git
 
-cd your-repo-name
+cd Bmp_image_processor
 ```
 
 Compile the project:
 
 ```bash
-gcc main.c bmp_functions.c bmp_filters.c -o bmp_engine
+gcc bmpimage.c bmp_functions.c bmp_filters.c -o bmp_engine
 ```
 
 If you're using GCC and want additional warnings enabled:
 
 ```bash
-gcc -Wall -Wextra -std=c11 main.c bmp_functions.c bmp_filters.c -o bmp_engine
+gcc -Wall -Wextra -std=c11 bmpimage.c bmp_functions.c bmp_filters.c -o bmp_engine
 ```
 
 ---
@@ -147,7 +147,7 @@ The program will guide you through the following steps:
 
 # Processing Pipeline
 
-```
+```text
 Input BMP
      │
      ▼
@@ -221,4 +221,3 @@ Write Output BMP
 # License
 
 This project is intended for educational and learning purposes.
-
