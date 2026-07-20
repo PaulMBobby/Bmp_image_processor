@@ -1,7 +1,7 @@
 #include<stdio.h>
-#include<C:\Codes\Project Work Related\bmpimage\bmp.h>
-#include<C:\Codes\Project Work related\bmpimage\bmp_functions.c>
-#include<C:\Codes\Project Work related\bmpimage\bmp_filters.c>
+#include<bmp.h>
+#include<bmp_functions.c>
+#include<bmp_filters.c>
 #include<stdlib.h>
 
 int main(){
