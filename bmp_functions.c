@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<C:\Codes\Project Work Related\bmpimage\bmp.h>
+#include<bmp.h>
 #include<stdint.h>
 #include<stdlib.h>
 
